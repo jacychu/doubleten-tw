@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>National day</title>
+
+    <style>
+    .building {
+        width: 30px;
+        height: 20px;
+        top: 359px;
+        left: 265px;
+        position: fixed;
+    }
+    #getWord {
+        height: auto;
+        width: 1000px;
+        margin: 0 auto;
+    }
+    .wordSetting {
+        font-size: 40px;
+        color: white;
+        margin: 60px 0 0 210px;
+    }
+    .vrl{
+        display: flex;
+        vertical-align: middle;
+        justify-content: center;
+        width: 70px;
+        writing-mode: vertical-rl;
+    }
+    .countryFont {
+        font-size: 30px;
+        color: lightblue;
+        margin-left: 207px;
+    }
+    body{
+        font-family: arial,"Microsoft JhengHei","微軟正黑體",sans-serif !important;
+        background: url("bg.png") fixed no-repeat;
+        width: 80%;
+    }
+
+    @media (max-width: 400px) {
+        .building {
+            width: 30px;
+            height: 20px;
+            top: 223px;
+            left: 157px;
+            position: fixed;
+        }
+        #getWord {
+            height: auto;
+            width: 600px;
+            margin: 0 auto;
+        }
+        .wordSetting {
+            font-size: 20px;
+            color: white;
+            margin: 22px 0 0 93px;
+        }
+        .vrl{
+            display: flex;
+            vertical-align: middle;
+            justify-content: center;
+            width: 70px;
+            writing-mode: vertical-rl;
+        }
+        .countryFont {
+            font-size: 8px;
+            color: lightblue;
+            margin-left: 132px;
+        }
+        body{
+            font-family: arial,"Microsoft JhengHei","微軟正黑體",sans-serif !important;
+            background: url("bg2.png") fixed no-repeat;
+        }
+    }
+    </style>
+</head>
+
+<body>
+<!--von去設定該事件動作 可以省去變成@ -->
+<div id="getWord" @mouseover="upHere = true" @mouseleave="upHere = false" >
+    <div>
+
+        <span v-if="upHere" :class="messageClass">{{text}}</span>
+        <br>
+        <span v-if="upHere" :class="countryClass">{{text2}}</span>
+    </div>
+    <div>
+        <svg class="building" xmlns:x="http://ns.adobe.com/Extensibility/1.0/" xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0/" xmlns:graph="http://ns.adobe.com/Graphs/1.0/" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Countryflags.com" x="0px" y="0px" viewBox="0 0 300 200" enable-background="new 0 0 300 200" xml:space="preserve" >
+            <switch>
+                <foreignObject requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/" x="0" y="0" width="1" height="1">
+                    <i:pgfRef xlink:href="#adobe_illustrator_pgf">
+                    </i:pgfRef>
+                </foreignObject>
+                <g i:extraneous="self">
+                    <g>
+                        <rect id="_x31_5" y="0" fill="#ED1E24" width="300" height="200"/>
+                        <rect id="_x31_4" y="0" fill="#2B2F84" width="150" height="100"/>
+                        <circle id="_x31_3" fill="#FFFFFF" cx="74.976" cy="49.991" r="18.69"/>
+                        <path id="_x31_2" fill="#FFFFFF" d="M79.361,28.94l-4.386-16.367l-4.396,16.408C72.893,28.421,76.409,28.291,79.361,28.94z"/>
+                        <path id="_x31_1" fill="#FFFFFF" d="M68.249,29.568L56.267,17.586l4.396,16.408C62.387,32.352,65.367,30.482,68.249,29.568z"/>
+                        <path id="_x31_0" fill="#FFFFFF" d="M58.939,35.667l-16.368-4.386l12.011,12.011C55.254,41.01,56.899,37.9,58.939,35.667z"/>
+                        <path id="_x39_" fill="#FFFFFF" d="M53.926,45.605l-16.368,4.386l16.408,4.397C53.406,52.074,53.275,48.558,53.926,45.605z"/>
+                        <path id="_x38_" fill="#FFFFFF" d="M54.553,56.718L42.571,68.7l16.408-4.396C57.337,62.58,55.466,59.6,54.553,56.718z"/>
+                        <path id="_x37_" fill="#FFFFFF" d="M60.653,66.028l-4.386,16.368l12.012-12.012C65.995,69.713,62.885,68.068,60.653,66.028z"/>
+                        <path id="_x36_" fill="#FFFFFF" d="M70.59,71.041l4.386,16.368l4.396-16.408C77.059,71.561,73.544,71.692,70.59,71.041z"/>
+                        <path id="_x35_" fill="#FFFFFF" d="M81.703,70.414l11.982,11.982l-4.396-16.408C87.566,67.63,84.586,69.501,81.703,70.414z"/>
+                        <path id="_x34_" fill="#FFFFFF" d="M91.013,64.314l16.368,4.386L95.37,56.689C94.698,58.972,93.053,62.082,91.013,64.314z"/>
+                        <path id="_x33_" fill="#FFFFFF" d="M96.027,54.377l16.368-4.386l-16.408-4.397C96.547,47.908,96.677,51.423,96.027,54.377z"/>
+                        <path id="_x32_" fill="#FFFFFF" d="M95.399,43.264l11.982-11.982l-16.408,4.396C92.616,37.401,94.486,40.381,95.399,43.264z"/>
+                        <path id="_x31_" fill="#FFFFFF" d="M89.3,33.954l4.386-16.368L81.674,29.597C83.957,30.268,87.067,31.913,89.3,33.954z"/>
+                    </g>
+                </g>
+            </switch>
+        </svg>
+    </div>
+</div>
+
+<!--開發版本-->
+<!--<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>-->
+<!--生產版本-->
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script>
+    let nationalHoliday = '雙十國慶日';
+    let country = 'Taiwan';
+    let startHere = new Vue({
+    el: '#getWord',
+    data: {
+        text: nationalHoliday,
+        text2: country,
+        messageClass: ['wordSetting', 'vrl'],
+        countryClass: ['countryFont'],
+        upHere : false
+    }
+    })
+</script>
+</body>
+</html>
